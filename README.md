@@ -8,6 +8,9 @@ mkdir acme
 touch acme/acme.json
 chmod 600 acme/acme.json
 
+# set up the stuff
+npm install
+
 # turn it on
 sudo docker-compose up -d
 
