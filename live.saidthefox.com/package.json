@@ -1,0 +1,23 @@
+{
+  "name": "cpu_monitor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "express": "^4.17.1",
+    "http": "^0.0.1-security",
+    "os-utils": "^0.0.14",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.saidthefox.com:Brandon/simple-sysload-request.git"
+  },
+  "author": "Jake",
+  "license": "ISC"
+}
