@@ -1,8 +1,9 @@
 import React from 'react';
 function Header() {
     return (
-      <head>
-      </head>
+        <div id = "header">
+                    saidthe<fox>fox</fox>&nbsp;Coffee Co.
+                </div>
     );
 }
 

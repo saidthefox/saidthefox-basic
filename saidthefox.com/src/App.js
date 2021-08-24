@@ -1,17 +1,22 @@
 import React from 'react';
-import Header from './components/Header.js'
-import Body from './components/Body.js'
-import Footer from './components/Footer.js'
+import Routes from './components/Routes.js';
 import './App.css';
+import Mainpage from './components/Mainpage.js';
 
-function App() {
-  return (
-    <div className="App">
-      <Header></Header>
-      <Body></Body>
-      <Footer></Footer>
-    </div>
-  );
+
+class App extends React.Component {
+  render() {
+
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("/sw.js");
+    }
+
+    return (
+      <React.Fragment>
+        <Mainpage></Mainpage>
+{/*<Routes></Routes>*/}
+      </React.Fragment>
+    );
+  }
 }
-
 export default App;
