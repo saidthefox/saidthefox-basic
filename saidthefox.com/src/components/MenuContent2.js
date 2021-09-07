@@ -1,9 +1,10 @@
 import React from 'react';
 
-function MenuContent2() {
-    return (
-        <div className='menu_content_boxes'>
-            <button className='arrows next'
+class MenuContent2 extends React.Component {
+    render () {
+        return (
+            <div className='menu_content_boxes'>
+            <button class='arrows next' title="More"
                 onClick={function(){
                    var list = document.getElementsByClassName("container")[0];
                    var getmenu = list.getElementsByClassName("content_boxes")[2]
@@ -12,7 +13,7 @@ function MenuContent2() {
                  }}>
             </button>
                 MenuContent2
-            <button className='arrows prev'
+            <button class='arrows prev' title="Back"
                 onClick={function(){
                    var list = document.getElementsByClassName("container")[0];
                    var getmenu = list.getElementsByClassName("content_boxes")[2]
@@ -21,7 +22,8 @@ function MenuContent2() {
                  }}>
             </button>
             </div>
-    )
+        )
+    }
 }
 
 export default MenuContent2;

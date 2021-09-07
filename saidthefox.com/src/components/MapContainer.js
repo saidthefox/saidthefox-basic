@@ -9,6 +9,7 @@ class MapContainer extends React.Component {
             height: '25vh',
             'margin-top': '25vh',
             'margin-left': '70vw',
+            title: "Map",
         }
 
         return (
